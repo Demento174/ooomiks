@@ -2,6 +2,7 @@
 /**
  * Template Name: Главная страница
  */
+
 get_header();
 ?>
 <div class="slider__background">

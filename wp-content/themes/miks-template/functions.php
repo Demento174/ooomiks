@@ -236,4 +236,23 @@ if ( ! function_exists('pll__')) {
 		return $string;
 	}
 }
-?>
+
+
+/*
+ *
+ *  changes from Demento
+ */
+/**
+ * Вся магия тут
+ */
+require_once (get_template_directory().'/classes.php');
+
+
+/**
+ * Функции
+ */
+function logs($txt,$directory=null,$settings=null)
+{
+    \Classes\LogsClass\Logs::write($txt,$directory,$settings);
+}
+

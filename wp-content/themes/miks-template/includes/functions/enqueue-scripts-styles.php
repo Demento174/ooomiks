@@ -61,6 +61,8 @@ if ( is_page('my-account') ){
 	wp_enqueue_script( 'drop-menue', get_template_directory_uri() . '/assets/js/drop-menue.js', array( 'jquery'), '1.8',
 	'footer');
 
+    wp_enqueue_script( 'demento', get_template_directory_uri() . '/assets/build/js/index.js',null,null,true);
+
 	// Адаптивные стили
 	wp_enqueue_style( 'pc-style', get_template_directory_uri() . '/assets/css/pc-style.css', array( 'miks-pages' ), '1.8',
 	'(max-width: 1295px)' );
@@ -76,4 +78,5 @@ if ( is_page('my-account') ){
 	));
 */
 }
+
 ?>
