@@ -1,0 +1,373 @@
+/*!
+Theme Name: OOO Miks Template
+Theme URI: https://ooomiks.com/
+Author: ryazanov.deni
+Author URI: http://vk.com/ryazanov.deni/
+Description: Description
+Version: 1.0.0
+License: OOO MIKS
+Tags: интернет магазин метизов и инструментов
+*/
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+	border-radius: 5px;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 1.8em;
+	margin-bottom: 0.6em;
+}
+
+h2 {
+	font-size: 1.6em;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	margin-bottom: 0.4em;
+}
+
+img {
+	clear: none;
+}
+
+p {
+	line-height: 1.5;
+}
+
+/*--------------------------------------------------------------
+# НАСТРОЙКИ СЫЫЛОК
+--------------------------------------------------------------*/
+
+a,
+a:visited {
+	background-color: transparent;
+	text-decoration: none;
+	color: #000;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #1a06ca;
+	transition: all 0.3s ease;
+}
+
+/* ограничение по ширене всего сайта */
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1241px;
+}
+
+.wrappers {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.litle {
+	max-width: 1024px;
+}
+
+/* сделать блок (контейнер) флекс элементом */
+.flex__wrap {
+	display: flex;
+}
+
+.flex__wrapper__center {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 32px;
+}
+
+.flex__wrapper__column {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+/* блок страниц контейнера сайта полная ширина */
+
+.content__container {
+	width: 100%;
+}
+
+/* Сам контент во врапере */
+
+.content__container__body {
+	width: 100%;
+}
+
+/* Кнопки сайта */
+
+/* Кнопки на сайте */
+/*
+a.button,
+.entry-summary .button,
+.added_to_cart,
+.woocommerce-button,*/
+.content__index__page .button {
+	display: flex;
+}
+
+.button,
+.added_to_cart,
+.add_to_cart_button,
+.loading,
+.woocommerce-button {
+	width: 100%;
+	position: relative;
+	max-width: 150px;
+	border: 3px solid #1d49aa;
+	color: #fff;
+	padding: 15px 5px;
+	align-items: center;
+	border-radius: 5px;
+	appearance: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	margin: 10px;
+}
+
+.button,
+.woocommerce-button {
+	background-color: #1d49aa;
+}
+
+.button:hover,
+.woocommerce-button:hover {
+	background-color: #fff;
+	color: #1d49aa;
+}
+
+.added_to_cart,
+.added_to_cart:hover {
+	transition: box-shadow 0.3s ease;
+}
+
+.added_to_cart:hover {
+	box-shadow: 0 0 8px rgba(0, 0, 0, .3);
+}
+
+@keyframes tiktak {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-180deg);
+	}
+}
+
+.product .loading::before {
+	font-family: 'icon-miks';
+	content: "\e918";
+	animation-name: tiktak;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+}
+
+.added_to_cart::before {
+	font-family: 'icon-miks';
+	content: "\e900";
+}
+
+.add_to_cart_button::before {
+	font-family: 'icon-miks';
+	content: "\e908";
+}
+
+.loading::before,
+.add_to_cart_button::before,
+.added_to_cart::before {
+	position: absolute;
+	font-size: 1.1em;
+	top: 13px;
+	left: 7px;
+}
+
+.loading::before {
+	font-size: 1em;
+}
+
+input:hover,
+textarea:hover,
+.plus:hover,
+.minus:hover {
+	cursor: pointer;
+	border-color: #ebf6ff;
+	background-color: #f4faff;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(186, 225, 255, 0.388);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(186, 225, 255, 0.39);
+	box-shadow: 0px 0px 8px 1px rgba(186, 225, 255, 0.39);
+	transition: 0.3s all;
+}
+
+input:focus,
+textarea:focus {
+	cursor: text;
+	border-color: #ebf6ff;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(186, 225, 255, 0.388);
+	-moz-box-shadow: 0px 0px 8px 1px rgba(186, 225, 255, 0.39);
+	box-shadow: 0px 0px 8px 1px rgba(186, 225, 255, 0.39);
+	transition: 0.3s all;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+textarea {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #ebebeb;
+	background-color: #fafafa;
+	transition: color 0.3s ease-out, background-color 0.3s ease;
+}
+
+input[type="submit"] {
+	width: 100%;
+	max-width: 150px;
+	position: relative;
+	margin: 10px 0px;
+	padding: 15px 5px;
+	color: #fff;
+	background-color: #1d49aa;
+	border: 3px solid #1d49aa;
+	align-items: center;
+	border-radius: 5px;
+	appearance: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	color: #1d49aa;
+	background-color: #fff;
+	transition: all 0.3s ease;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	transform: scale(1.2);
+	margin-right: 15px;
+}
+
+/*
+button {
+	width: 100%;
+	max-width: 170px;
+	appearance: none;
+	border: 3px solid #1d49aa;
+	background-color: #1d49aa;
+	color: #fff;
+	padding: 12px 5px;
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+button:hover {
+	color: #1d49aa;
+	background-color: #fff;
+}
+
+button:focus {
+	outline: none;
+	box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+button:active {
+	transform: translateY(2px);
+	background-color: #fff;
+}
+*/
+/*
+.shop__button {
+	border-radius: 8px;
+	width: 100%;
+	text-align: center;
+	max-width: 350px;
+	border: 3px solid #1d49aa;
+	background-color: #1d49aa;
+	padding: 12px 15px;
+	margin: 10px 0;
+	cursor: pointer;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.shop__button::after {
+	font-family: 'icon-miks';
+	content: "\e903";
+	margin-left: 15px;
+	font-size: 15px;
+	padding-top: 5px;
+}
+
+.shop__button:hover {
+	background-color: #fff;
+	color: #1d49aa;
+	-webkit-box-shadow: 0px 0px 4px 4px rgba(29, 73, 170, 0.2);
+	-moz-box-shadow: 0px 0px 4px 4px rgba(29, 73, 170, 0.2);
+	box-shadow: 0px 0px 4px 4px rgba(29, 73, 170, 0.2);
+}
+
+/* ---------------------------------------- */
+
+[class*="_container"] {
+	width: 100%;
+	max-width: 1241px;
+	padding: 0 5px;
+	margin: 0px auto;
+	box-sizing: border-box;
+}

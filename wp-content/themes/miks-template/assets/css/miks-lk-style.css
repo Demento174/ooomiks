@@ -1,0 +1,91 @@
+/* МОЙ АККАУНТ */
+
+.content__container .woocommerce {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.woocommerce-MyAccount-navigation {
+  width: 27%;
+  margin-bottom: 35px;
+}
+
+.woocommerce-MyAccount-content {
+  width: 68%;
+  padding-left: 20px;
+  border-left: 1px solid #ebebeb;
+}
+
+.woocommerce-MyAccount-navigation ul li {
+  border-bottom: 1px solid #eee;
+}
+
+.woocommerce-MyAccount-navigation ul li.is-active a:before {
+  opacity: 1;
+}
+
+.woocommerce-MyAccount-navigation ul li a {
+  padding: 10px 5px;
+  display: block;
+}
+
+.woocommerce-MyAccount-navigation ul li a:before {
+  margin-right: 20px;
+  opacity: .25;
+}
+
+.woocommerce-MyAccount-navigation ul li a:hover:before {
+  opacity: 1;
+}
+
+.adress__wrapper .woocommerce-Address,
+.woocommerce-Recwisits {
+  border: 1px solid #ebebeb;
+  padding: 15px;
+}
+
+.adress__wrapper .woocommerce-Address h3 {
+  font-size: 15px;
+}
+
+
+/* ЛК - адрес */
+.adress__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.woocommerce-address-fields input {
+  width: 100%;
+}
+
+/* ЛК - детали профиля */
+.detalsprof__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.detalsprof__change,
+.detalsprof__organization {
+  width: 48%;
+}
+
+.detalsprof__wrapper p {
+  margin-bottom: 15px;
+}
+
+.detalsprof__organization h2 {
+  text-align: left;
+}
+
+.woocommerce-MyAccount-content .woocommerce-Address,
+.woocommerce-Recwisits {
+  width: 45%;
+}

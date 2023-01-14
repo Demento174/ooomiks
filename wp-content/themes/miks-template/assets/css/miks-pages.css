@@ -1,0 +1,1789 @@
+/* Заголовки страниц */
+
+.page__header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.page__header h1 {
+  font-size: 1.6em;
+  padding-bottom: 7px;
+}
+
+.page__header h2 {
+  font-size: 0.9em;
+  color: #333;
+}
+
+/* Страница - главная */
+
+.content__body {
+  margin-top: 25px;
+}
+
+.index__page__short__about {
+  width: 100%;
+  margin: 0px 0 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 5px solid #f1f1f1;
+}
+
+.plus__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plus__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 23%;
+  border-right: 1px solid #ebebeb;
+  margin-right: 18px;
+  padding: 10px 0;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.plus__block:hover .effect_shake {
+  animation: shake 0.7s;
+}
+
+.plus__block:last-child {
+  border: 0;
+  padding-right: 0;
+}
+
+.plus__block__image {
+  min-height: 60px;
+  margin-bottom: 15px;
+}
+
+.plus__block__image img {
+  object-fit: cover;
+}
+
+.plus__block__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-right: 18px;
+  padding-left: 18px;
+  font-size: 0.8em;
+  min-height: 70px;
+}
+
+.plus__block__title {
+  font-weight: 700;
+  font-size: 1em;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.plus__block__text {
+  color: #333;
+  text-align: center;
+}
+
+/* страница главная - блок с 3 основными категориями */
+
+.block__categories {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.block__categories__img {
+  width: 31%;
+  max-height: 230px;
+  overflow: hidden;
+  position: relative;
+  border: 3px solid #f1f1f1;
+  cursor: pointer;
+}
+
+.block__categories__img img {
+  object-fit: cover;
+}
+
+.block__categories__img:hover .image__scale {
+  transform: scale(1.05);
+}
+
+.image__scale {
+  transition: 0.5s;
+  display: block;
+}
+
+.block__categories__text {
+  width: 80%;
+  height: min-content;
+  min-width: 100px;
+  max-width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.671);
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.block__categories__link,
+.block__categories__link:visited {
+  font-size: 1.3em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.block__categories__link:hover {
+  color: rgb(202, 202, 202);
+}
+
+/* страница - главная - категории товаров */
+
+.content__index__page .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content__index__page h2 {
+  margin: 15px 0px;
+}
+
+.content__index__page .woocommerce {
+  margin-bottom: 35px;
+}
+
+.subcategory__wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.subcategory {
+  position: relative;
+  background: #fff;
+  margin-bottom: 15px;
+  width: 16.66%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+.subcategory h2 {
+  font-size: 0.9em;
+  font-weight: lighter;
+}
+
+.subcategory-image {
+  display: block;
+}
+
+.subcategory-image img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  max-height: 200px;
+  padding: 5px;
+}
+
+.subcategory-title {
+  padding: 15px 5px;
+}
+
+.font-page-hide {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 180px;
+  left: 0;
+  background: #fafafa;
+  text-align: justify;
+  font-size: 1.3em;
+  border-top: 0;
+  padding: 5%;
+  padding-top: 0;
+  box-shadow: 0 13px 20px -4px rgb(0 0 0 / 20%);
+  z-index: 999;
+}
+
+.font-page-hide a {
+  width: 100%;
+}
+
+.subcategory:hover .font-page-hide {
+  display: block;
+}
+
+.subcategory:hover {
+  box-shadow: 0 13px 20px -4px rgb(0 0 0 / 20%);
+}
+
+/* Страница - новости */
+
+.blog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.blog__continer {
+  width: 32%;
+  margin-bottom: 2%;
+  margin-right: 2%;
+  align-self: flex-start;
+}
+
+.blog__continer:nth-child(3n) {
+  margin-right: 0;
+}
+
+.blog__article__img {
+  width: 100%;
+  border: 1px solid #ebebeb;
+  border-bottom: 0;
+}
+
+.blog__article__img img {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+}
+
+.blog__article__title,
+.blog__article__text,
+.blog__article__author {
+  width: 100%;
+}
+
+.blog__article__text p {
+  text-align: justify;
+}
+
+.blog__article__container h2 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
+.blog__article__title {
+  font-weight: 500;
+}
+
+.blog__article__footer {
+  margin-bottom: 7px;
+}
+
+.blog__article__footer,
+.blog__article__footer a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgb(119, 119, 119);
+}
+
+
+.blog__article__bot {
+  margin: 0 auto;
+}
+
+
+.blog__article__author {
+  padding: 7px 0px 7px 0px;
+}
+
+.blog__article__author {
+  text-align: right;
+}
+
+/* страница нрвости (блок с рубриками и последими постами) */
+.blog-article-posts {
+  float: left;
+  width: 30%;
+}
+
+/* страница Новости - заголовок */
+
+.blog__article__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* страница новости - открытая запись */
+
+.blog__open {
+  max-width: 900px;
+}
+
+.blog__news__wrapper {
+  width: 100%;
+}
+
+.blog__news__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.stars {
+  font-size: 1.8em;
+  margin: 10px 0;
+}
+
+.blog__news__image__block {
+  width: 38%;
+}
+
+.blog__news__img {
+  width: 100%;
+}
+
+.blog__news__image__content {
+  width: 58%;
+  padding: 20px;
+}
+
+.blog__news__image__content a {
+  text-decoration: underline;
+}
+
+.blog__news__date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.blog__news__image__title .posted-on {
+  padding: 10px 0px;
+}
+
+.blog__news__image__text {
+  line-height: 18px;
+}
+
+/* Страница комментариев */
+
+.woocommerce-Reviews .comment-respond {
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  padding: 10px 30px;
+}
+
+.woocommerce-Reviews .comment-form {}
+
+.comment-respond h3 {
+  font-size: 1.6em;
+}
+
+
+.woocommerce-Reviews .comment-form p {
+  margin-bottom: 10px;
+
+}
+
+.comment-notes {
+  margin-bottom: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: #c5deff;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+}
+
+.comment-notes #email-notes {
+  margin-bottom: 15px;
+}
+
+.woocommerce-billing-fields__field-wrapper textarea {
+  width: 100%;
+  height: 150px;
+  max-height: 150px;
+}
+
+.-previous,
+.nav-next {
+  margin: 15px 20px;
+}
+
+.blog__news__wrapper input {
+  max-width: 220px;
+}
+
+/* Откытая запись блога */
+
+.blog__open__comntainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  align-content: flex-end;
+}
+
+.blog__open__img {
+  width: 30%;
+}
+
+.blog__open__img img {
+  width: 100%;
+  height: auto;
+}
+
+.blog__open__contain {
+  width: 50%;
+  padding: 0 20px;
+}
+
+.blog__open__block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog__open__title {
+  border-left: 5px solid #ddd;
+  padding: 10px 0px 0px 10px;
+}
+
+.blog__open__text {
+  padding-left: 18px;
+}
+
+.blog__open__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  color: rgb(104, 104, 104);
+  font-weight: 400;
+}
+
+.blog__open__footer a {
+  color: rgb(104, 104, 104);
+
+}
+
+.blog__open__date,
+.blog__open__roub,
+.blog__open__author {
+  width: auto;
+  margin: 0px 20px 0px 0px;
+}
+
+/* СТРАНИЦА ОФОРМЛЕНИЕ ЗАКАЗА */
+
+.woocommerce-checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 35px 0px 0px 0px;
+}
+
+.checkout__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout__wrapper .woocommerce-form-login-toggle {
+  width: 40%;
+  border: 1px solid #ebebeb;
+  background-color: #fafafa;
+}
+
+.checkout__wrapper .woocommerce-info {
+  padding: 20px;
+  background-color: rgb(237, 244, 255);
+}
+
+.checkout__wrapper .woocommerce-form {
+  width: 40%;
+  border: 1px solid #ebebeb;
+  border-top: 0px;
+  padding: 20px;
+}
+
+.checkout__wrapper .woocommerce-form input {
+  width: 100%;
+  margin: 0;
+}
+
+.checkout__wrapper .woocommerce-form-login__rememberme input {
+  width: auto;
+  margin-right: 15px;
+}
+
+.checkout__wrapper .woocommerce-form-login__rememberme {
+  display: flex;
+  margin: 20px 0px 10px 0px;
+}
+
+/* Блок ввести купон */
+.woocommerce-form-coupon-toggle,
+.woocommerce-form-coupon {
+  background-color: #fafafa;
+  padding: 20px;
+  border: 1px solid #ebebeb;
+}
+
+.woocommerce-form-coupon-toggle {
+  width: 100%;
+}
+
+.woocommerce-notices-wrapper {
+  width: 100%;
+}
+
+.woocommerce-NoticeGroup-checkout li {
+  margin-bottom: 8px;
+}
+
+.woocommerce-NoticeGroup-checkout li:last-child {
+  margin-bottom: 0;
+}
+
+/* Блок оформления заказов */
+.checkout__wrapper__colums {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkout__left,
+.checkout__right {
+  width: 40%;
+}
+
+.checkout__left .input-text {
+  margin-bottom: 10px;
+}
+
+/* выбор способа оплаты */
+.checkout__right #payment {
+  margin-top: 25px;
+}
+
+.checkout__right #payment h2 {
+  font-weight: 500;
+}
+
+#organisation_checkout_field {
+  width: 100%;
+  padding: 20px;
+  color: rgb(100, 100, 100);
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+  background-color: rgb(237, 244, 255);
+  margin-bottom: 25px;
+}
+
+#organisation_checkout_field p {
+  margin: 0;
+}
+
+.orders__company__on {
+  width: 100%;
+  margin: 25px 0px 5px 0px;
+  padding: 10px 0px 0px 0px;
+  border-top: 1px solid #ebebeb;
+}
+
+.orders__company__on p {
+  display: inline-block;
+}
+
+.checkout__left .woocommerce-input-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.checkout__left .input-radio {
+  width: 5%;
+  margin-right: 3%;
+  margin-bottom: 0;
+  height: 20px;
+}
+
+.checkout__left label {
+  width: 91%;
+}
+
+.checkout__left label:last-child {
+  margin: 0;
+}
+
+.col-2 .woocommerce-additional-fields h3 {
+  display: none;
+}
+
+.checkout__right {
+  width: 55%;
+  border: 1px solid #ebebeb;
+  padding: 40px;
+  align-self: flex-start;
+  -webkit-box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+}
+
+.checkout__right h2,
+.woocommerce-billing-fields h3 {
+  font-size: 1.6em;
+  margin-bottom: 25px;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.checkout__right .order_review_heading {
+  margin-bottom: 25px;
+  font-size: 1.3em;
+}
+
+.checkout__right .button {
+  max-width: 220px;
+  padding: 20px;
+}
+
+.checkout__right .button {
+  font-weight: 600;
+  border-color: #1d4ae9;
+  color: #fff;
+}
+
+.checkout__right .button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Политика конфид */
+
+.privacy__policy {
+  font-size: 1em;
+}
+
+/*
+.private_policy {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-weight: 600;
+}*/
+
+/* Страница - контакты */
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.contacts__adress {
+  width: 40%;
+}
+
+.contacts__map {
+  width: 60%;
+  padding: 0 20px 20px 20px;
+}
+
+.contacts__adress h2 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contacts__adress_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid #ebebeb;
+}
+
+.contacts__adress_wrapper:last-child {
+  padding-bottom: 0px;
+  margin-bottom: 25px;
+  border-bottom: 0;
+}
+
+.contacts__adress__image {
+  width: 10%;
+}
+
+.contacts__adress__image img {
+  height: auto;
+  max-width: 100%;
+}
+
+.contacts__adress__text {
+  width: 85%;
+}
+
+.contacts__adress__text h3 {
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+.contacts__forms {
+  width: 60%;
+  padding: 4%;
+  border: 1px solid #ebebeb;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 36px -15px rgba(28, 28, 28, 0.2);
+  -moz-box-shadow: 0px 0px 36px -15px rgba(28, 28, 28, 0.2);
+  box-shadow: 0px 0px 36px -15px rgba(28, 28, 28, 0.2);
+}
+
+.contacts__forms h2 {
+  margin-bottom: 4%;
+  text-transform: uppercase;
+}
+
+.contacts__forms p {
+  font-size: 0.8em;
+}
+
+.contacts__sviaz__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.contacts__sviaz__form input,
+.contacts__sviaz__form textarea {
+  margin-bottom: 15px;
+}
+
+.contacts__sviaz__form .for-center-element {
+  margin: 0 auto;
+  max-width: 180px;
+}
+
+.button-swaz {
+  width: 45%;
+  background-color: rgb(47, 72, 214);
+  border-color: rgb(47, 72, 214);
+  color: #fff;
+  cursor: pointer;
+}
+
+.button-swaz:hover {
+  background-color: #000;
+}
+
+.input-pol {
+  width: 48%;
+}
+
+.input-cel {
+  width: 100%;
+}
+
+
+/* Страница - О компании */
+
+.aboutus__image {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.aboutus__image__content {
+  width: 32%;
+  margin-bottom: 25px;
+}
+
+.aboutus__image__block {
+  width: 100%;
+  height: 250px;
+}
+
+.aboutus__image__block img {
+  width: 100%;
+  /* Ширина изображений */
+  height: 100%;
+  /* Высота изображении */
+  object-fit: cover;
+  /* Вписываем фотографию в область */
+}
+
+.about__image__text {
+  width: 100%;
+  text-align: center;
+}
+
+.aboutus__text {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.aboutus__text h2 {
+  text-align: center;
+}
+
+/* скачать реквизиты */
+.aboutus__download {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.aboutus__download h3 {
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.about-us-dop {
+  width: 100%;
+}
+
+.about-us-dop p {
+  text-align: justify;
+}
+
+.about-table {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.about-table tr {
+  border: 1px solid #ccc;
+}
+
+.about-table td {
+  border: 1px solid #ccc;
+}
+
+.about-table td {
+  padding: 10px;
+  margin: 10px;
+}
+
+.contacts__sotr__wrapper {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.contacts__sotr__body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+/* СТРАНИЦА КОНТАКТЫ */
+
+.contacts-wrapper-opp {
+  text-align: center;
+}
+
+.contacts-wrapper-opp h1 {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.contacts-block-sotr {
+  width: 32%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contacts-block-photo {
+  width: 100%;
+  /* Ширина области */
+  height: 250px;
+  /* Высота области */
+  margin: 0;
+}
+
+.contacts-block-photo img {
+  width: 100%;
+  /* Ширина изображений */
+  height: 100%;
+  /* Высота изображении */
+  object-fit: cover;
+  /* Вписываем фотографию в область */
+}
+
+.contacts-block-fio {
+  margin-top: 20px;
+  font-size: 1.1em;
+  text-decoration: underline;
+}
+
+.contacts-block-parent {
+  font-size: 0.9em;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 15px;
+}
+
+
+/* Страница контакты - блок с контактами магазина */
+
+.contacts-adress {
+  width: 40%;
+}
+
+.contacts-adress h2 {
+  margin-bottom: 5%;
+}
+
+.contacts-adress h3 {
+  font-weight: lighter;
+  font-size: 1.3em;
+  margin-bottom: 1.8%;
+}
+
+.contacts-adress p {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.contacts-adress-wrap {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+
+.contacts-adress-image {
+  flex-basis: 10%;
+  width: 10%;
+  height: 50px;
+}
+
+.contacts-adress-text {
+  flex-basis: 90%;
+  padding-left: 5%;
+}
+
+/* СТРАНИЦА - ДОСТАВКА */
+
+.delivery-left {
+  width: 70%;
+}
+
+.delivery-left h2 {
+  margin-bottom: 10px;
+}
+
+.delivery-right {
+  font-size: 1.2em;
+  width: 30%;
+  padding-left: 10%;
+  align-items: center;
+  color: #454bff;
+}
+
+.pay h2 {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.pay p {
+  margin-bottom: 35px;
+}
+
+/* Страница результаты поиска поиск */
+.search__rez__page {
+  width: 100%;
+}
+
+.search__rez_content {
+  display: flex;
+  flex-direction: row;
+}
+
+.search__rez_content img {
+  width: 50px;
+}
+
+/* СТРАНИЦА МОЙ АККАУНТ / ЛОГИН/ ВХОД / РЕГИСТРАЦИЯ */
+.required {
+  color: red;
+}
+
+.woocommerce-ResetPassword {
+  width: 100%;
+}
+
+.woocommerce-ResetPassword p {
+  padding: 10px 0;
+}
+
+.reset_password {
+  width: 100%;
+}
+
+.woocommerce-MyAccount-navigation li {
+  position: relative;
+}
+
+.woocommerce-MyAccount-navigation li::before {
+  position: absolute;
+  content: "-";
+  top: 8px;
+  left: 0;
+}
+
+/* Блок создания пароля */
+
+.woocommerce-password-strength {
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  color: #000;
+  transition: 0.5s all;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 0px 37px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 37px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 37px 3px rgba(0, 0, 0, 0.08);
+}
+
+.password-input .short {
+  background-color: rgb(255, 58, 23);
+  color: #fff;
+}
+
+.password-input .bad {
+  background-color: rgb(253, 245, 135);
+}
+
+.password-input .good {
+  background-color: rgb(197, 255, 197);
+}
+
+.password-input .strong {
+  background-color: rgb(0, 189, 0);
+}
+
+.u-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.u-columns .log__fild {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.u-column1 {
+  width: 44%;
+}
+
+.u-column2 {
+  width: 52%;
+  border: 1px solid #ebebeb;
+  padding: 40px;
+  -webkit-box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+}
+
+.u-column2 input {
+  width: 100%;
+}
+
+.litle a {
+  text-decoration: underline;
+}
+
+.lost_password {
+  margin: 20px 0px;
+}
+
+.lost_password a,
+.woocommerce-privacy-policy-link,
+.comment-respond a {
+  text-decoration: underline;
+  color: #3b3b3b;
+}
+
+/* выход */
+.header__logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header___am span {
+  padding-right: 25px;
+}
+
+.header__logout::before {
+  position: absolute;
+  font-family: 'icon-miks';
+  content: "\e919";
+  top: 11px;
+  right: 0;
+  font-size: 15px;
+}
+
+/* дополнительные стили для этого примера */
+
+.slider__item .image-div img {
+  width: 100%;
+  height: 100%;
+  counter-increment: slide;
+}
+
+.slider__wrapper {
+  width: 100%;
+  color: #fff;
+}
+
+.slider-front-page {
+  width: 100%;
+
+}
+
+/*
+.slider_title {
+  position: absolute;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100%;
+  top: 7%;
+  text-align: center;
+  color: #000;
+}
+
+.slider_text {
+  position: absolute;
+  width: 90%;
+  padding: 2%;
+  margin: 5% 5% 0 5%;
+  margin-top: 0;
+  top: 30%;
+  text-align: justify;
+  background: rgba(0, 0, 0, .6);
+}
+
+.slider_text p {
+  margin: 0;
+  padding: 0;
+}
+*/
+.slider_title,
+.slider_text {
+  display: none;
+}
+
+/* Страница магазин на ней категории */
+
+.miks__before__shop__loop {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+.miks__before__shop__loop .content-area {
+  width: 957px;
+}
+*/
+
+.miks__before__shop__loop .content-area {
+  flex: 1 1 auto;
+  margin-bottom: 15px;
+}
+
+.product_meta .sku_wrapper {
+  display: none;
+}
+
+.berocket_single_filter_widget {
+  width: 314px;
+}
+
+.woocommerce-loop-category__title {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 15px 0px 5px 0px;
+  padding: 5px 10px;
+}
+
+.result__count__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.woocommerce-ordering .orderby {
+  border: 2px solid #f1f1f1;
+  padding: 5px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 320px;
+}
+
+.woocommerce-result-count {
+  color: #838383;
+}
+
+/* Обрамление всего выввода товара (Сам товар/ отзывы / табы и тд) */
+.miks__single__product__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* рамка изображения и описания товара */
+.miks__sale__image__about__wrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+/* UPSELLS */
+.miks__upsells__wrapper {
+  max-width: 30%;
+  background-color: #fafafa;
+  border: 1px solid #ebebeb;
+  padding: 25px 30px;
+  -webkit-box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 25px -10px rgba(34, 60, 80, 0.2);
+}
+
+.upsells__title h2 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.up-sells .product {
+  width: 100%;
+  flex-direction: column;
+  padding: 0px;
+}
+
+.up-sells .product a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.up-sells li {
+  border: 0;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 15px;
+}
+
+.up-sells li .product:last-child {
+  border: 0;
+}
+
+.miks__upsells__wrapper .product img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ebebeb;
+  margin: 0px 15px 15px 0px;
+}
+
+.miks__upsells__wrapper .product h2 {
+  font-size: 1em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.miks__upsells__wrapper .woocommerce-product-rating {
+  display: none;
+}
+
+.miks__upsells__wrapper .price {
+  display: none;
+}
+
+.miks__upsells__wrapper .qib-container {
+  display: none !important;
+}
+
+.miks__upsells__wrapper .product:nth-child(5n+1) {
+  border-left: none;
+}
+
+.flex-active-slide a {
+  width: 100%;
+  display: block;
+  line-height: 0;
+}
+
+.flex-active-slide img {
+  cursor: crosshair;
+}
+
+/* Woocommerce Страница Корзина */
+
+.woocommerce-cart-form__contents {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/*
+.woocommerce-cart-form__contents .input-text {
+  margin: 0;
+  width: 70px;
+  text-align: center;
+}*/
+
+.product-thumbnail a {
+  display: inline-block;
+}
+
+.product-thumbnail img {
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.woocommerce-cart-form__contents th,
+.woocommerce-cart-form__contents td:first-child {
+  padding: 10px;
+}
+
+.woocommerce-cart-form__contents th,
+.woocommerce-cart-form__contents td {
+  border: 2px solid #dddddd;
+  vertical-align: middle;
+}
+
+.woocommerce-cart-form__contents td {
+  vertical-align: middle;
+  padding: 10px;
+}
+
+.woocommerce-cart-form__contents th:first-child,
+.woocommerce-cart-form__contents td:first-child {
+  text-align: center;
+}
+
+
+/*
+.cart_item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+*/
+/*
+.cart_item .product-remove {
+  width: 100%;
+  max-width: 5%;
+}
+
+.cart_item .product-thumbnail {
+  width: 100%;
+  max-width: 10%;
+}
+
+.cart_item .product-thumbnail img {
+  width: 100%;
+  max-width: 75px;
+  max-height: 75px;
+  object-fit: cover;
+}
+
+.cart_item .product-name {
+  width: 100%;
+  max-width: 50%;
+}
+
+.cart_item .product-price,
+.cart_item .product-quantity,
+.cart_item .product-subtotal {
+  max-width: 10%;
+}
+
+.product-quantity .quantity {
+  display: block;
+  margin: 0;
+  padding: 0;
+  max-width: 50px;
+}
+
+.woocommerce .input-text {
+  max-width: 70px;
+}
+
+/*
+
+}
+*/
+/* блок с доп информацией о доставке */
+.about__dostavka {
+  border-radius: 8px;
+  background-color: #ebebeb;
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.woocommerce-cart-form .actions {
+  display: none;
+}
+
+.shop_table_responsive .coupon {
+  display: none;
+}
+
+.shop_table_responsive .coupon .button {
+  max-width: 200px;
+}
+
+.shop_table_responsive .coupon input {
+  margin: 0px;
+}
+
+.shop_table_responsive .coupon label {
+  display: none;
+}
+
+/* количество товара чтобы добавить в корзину */
+
+#shipping_method {
+  width: 100%;
+}
+
+#shipping_method li {
+  width: 100%;
+  margin: 15px 0px;
+  padding: 20px;
+  border: 2px solid #ebebeb;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+#shipping_method li input {
+  margin-right: 10px;
+  transform: scale(1.6);
+}
+
+/* Физ юр лицо */
+
+.woocommerce-billing-fields__field-wrapper .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+/*
+.woocommerce-billing-fields .address-field{
+    display: none;
+}*/
+
+.cart_item .product-total {
+  text-align: right;
+}
+
+.woocommerce-radio-wrapper {
+  height: 70px;
+  margin-top: 15px;
+}
+
+.woocommerce-radio-wrapper input,
+label {
+  margin-bottom: 15px;
+}
+
+.woocommerce-radio-wrapper label {
+  display: block;
+}
+
+.woocommerce-radio-wrapper input {
+  width: 15px;
+  margin-right: 15px;
+}
+
+/* Force table to behave with flexbox */
+table.woocommerce-checkout-review-order-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.woocommerce-checkout-review-order-table tbody td {
+  padding: 10px 10px 10px 0px;
+
+}
+
+/* Force all items to fill available space */
+table.woocommerce-checkout-review-order-table * {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+/* Force thead/tbody/tfoot to fill 100% of space */
+table.woocommerce-checkout-review-order-table>* {
+  flex: 1 0 100%;
+}
+
+table.woocommerce-checkout-review-order-table thead {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+table.woocommerce-checkout-review-order-table .cart-subtotal {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+/* Control table rows with flex */
+table.woocommerce-checkout-review-order-table tr {
+  display: flex;
+  padding: 10px 0px;
+}
+
+table.woocommerce-checkout-review-order-table tr {
+  border-bottom: 1px solid #ebebeb;
+}
+
+
+/* Make item descriptions 60%+ of the table width */
+table.woocommerce-checkout-review-order-table thead th:nth-of-type(odd),
+table.woocommerce-checkout-review-order-table .cart_item td:nth-of-type(odd) {
+  flex: 1 0 60%
+}
+
+/* Fix tfoot headings ( subtotal, shipping etc.) to occupy maximum of 130px */
+table.woocommerce-checkout-review-order-table tfoot th {
+  flex: 0 0 130px;
+  text-align: left;
+}
+
+/* Corect text alignment on right hand columns */
+
+
+/* Корзина итого */
+
+.cart-subtotal {
+  margin-top: 10px;
+}
+
+.cart-subtotal td {
+  text-align: right;
+}
+
+.order-total {
+  font-size: 1.3em;
+  padding-bottom: 3px;
+  border-bottom: 2px solid rgb(59, 59, 59);
+  margin-bottom: 20px;
+}
+
+.order-total td {
+  text-align: right;
+}
+
+.woocommerce-checkout-payment li {
+  margin-bottom: 15px;
+}
+
+#billing_country_field {
+  display: none;
+}
+
+.woocommerce .cart__wrapper .woocommerce-notices-wrapper {
+  display: none;
+}
+
+.woocommerce-privacy-policy-text p,
+.payment_method_bacs p,
+.orders__company__on p,
+.woocommerce-password-hint,
+.wc_payment_method p,
+.info,
+.privacy__policy {
+  font-size: 0.8em;
+  padding: 15px;
+  color: rgb(63, 63, 63);
+  border: 2px solid #ebebeb;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.wc_payment_method p {
+  margin: 15px 0px;
+  font-size: 1em;
+}
+
+.payment_method_bacs p {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.place-order {
+  text-align: center;
+}
+
+.product_meta {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0px;
+  color: #888;
+}
+
+.product_meta span {
+  margin-bottom: 10px;
+}
+
+/* кнопки + - */
+
+.actions .button {
+  display: none;
+}
+
+/*
+.quantity {
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+}
+
+.quantity input {
+  text-align: center;
+  width: 65px;
+  height: 50px;
+  margin: 0;
+  border-radius: 0px;
+}
+
+.cart__wrapper .quantity {
+  width: inherit;
+}
+
+.cart__wrapper .quantity input,
+.cart__wrapper .plus,
+.cart__wrapper .minus {
+  height: 35px;
+}
+*/
+/* доработать кнопки
+.button__block {
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+}*/
+
+.plus,
+.minus {
+  width: 35px;
+  font-size: 1.1em;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+}
+
+.plus {
+  border-left: 0;
+}
+
+.minus {
+  border-right: 0;
+}
+
+/* Натсройка вывода продуктов */
+
+.miks__shop__wrapper .products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.miks__sale__image__about__wrapper .products {
+  display: block;
+}
+
+.woocommerce-result-count .price {
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+
+.up-sells .products .button,
+.qib-container {
+  display: none;
+  visibility: none;
+}
+
+.woocommerce-customer-details p {
+  padding: 5px;
+}
+
+/* Страница 404 */
+
+.page__warning {
+  margin: 0 auto;
+  text-align: center;
+  padding: 35px;
+  max-width: 500px;
+  border: 15px dashed #f9fd00;
+  background-color: #000;
+  color: #fff;
+}
+
+.warning__catalog {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  margin: 10px 35px;
+  background-color: #0026af;
+  border: 5px solid #0026af;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+a.warning__catalog {
+  color: #fff;
+}
+
+.warning__catalog::before {
+  margin-right: 15px;
+  font-family: 'icon-miks';
+  content: "\e90e";
+}
+
+
+.warning__search {
+  margin: 15px;
+}

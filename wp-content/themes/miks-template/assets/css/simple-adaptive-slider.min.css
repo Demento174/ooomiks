@@ -1,0 +1,132 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.slider__wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: inherit;
+}
+
+.slider__items {
+  display: flex;
+  transition: transform .5s ease;
+}
+
+/*
+.image-div {
+  max-height: 400px;
+}
+
+.image-div img {
+  max-height: 400px;
+}*/
+
+.transition-none {
+  transition: none
+}
+
+.slider__item {
+  flex: 0 0 100%;
+  position: relative
+}
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, .6);
+  opacity: .5;
+  user-select: none
+}
+
+.slider__control_show {
+  display: flex
+}
+
+.slider__control:focus,
+.slider__control:hover {
+  color: #fff;
+  text-decoration: none;
+  opacity: .7
+}
+
+.slider__control_prev {
+  left: 0;
+  margin-left: 13px;
+}
+
+.slider__control_next {
+  right: 0;
+  margin-right: 13px;
+}
+
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%
+}
+
+.slider__control_prev::before,
+.slider__control_next::before {
+  font-size: 0.95em;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
+.slider__control_prev::before {
+  font-family: 'icon-miks';
+  content: "\e902";
+}
+
+.slider__control_next::before {
+  font-family: 'icon-miks';
+  content: "\e903";
+}
+
+.slider__indicators {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin: 0 15%;
+  list-style: none;
+  user-select: none;
+  display: none;
+}
+
+.slider__indicator {
+  flex: 0 1 auto;
+  width: 30px;
+  height: 4px;
+  margin-right: 3px;
+  margin-left: 3px;
+  background-color: rgba(255, 255, 255, .5);
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.slider__indicator_active {
+  background-color: #fff;
+  display: none;
+}
