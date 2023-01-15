@@ -19,10 +19,11 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 
+
 $attribute_keys  = array_keys( $attributes );
 $variations_json = wp_json_encode( $available_variations );
 $variations_attr = function_exists( 'wc_esc_json' ) ? wc_esc_json( $variations_json ) : _wp_specialchars( $variations_json, ENT_QUOTES, 'UTF-8', true );
-
+$default_attribute = $product->get_default_attributes();
 do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
 <div class="variations__miks">
@@ -37,7 +38,23 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 			<?php echo esc_html( apply_filters( 'woocommerce_out_of_stock_message', __( 'This product is currently out of stock and unavailable.', 'woocommerce' ) ) ); ?>
 		</p>
 		<?php else : ?>
-		<table class="variations" cellspacing="0">
+
+            <div class="options">
+                <?php foreach ( $attributes as $attribute_name => $options ) : ?>
+                    <div class="title"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?>:</div>
+                    <div class="inline-select">
+                        <?php foreach ($options as $option): ?>
+                            <a href="#"
+                               data-value="<?=$option?>"
+                               data-attribute-name="<?=$attribute_name?>" <?php if(isset($default_attribute[$attribute_name]) and $option === $default_attribute[$attribute_name]):?> class="active" <?php endif;?> ><?=$option?></a>
+                        <?php endforeach;?>
+                    </div>
+                <?php endforeach;?>
+
+
+            </div>
+
+		<table class="variations" cellspacing="0" style="display: none">
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 				<tr>
@@ -60,6 +77,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 				<?php endforeach; ?>
 			</tbody>
 		</table>
+
 		<?php do_action( 'woocommerce_after_variations_table' ); ?>
 
 		<div class="single_variation_wrap">

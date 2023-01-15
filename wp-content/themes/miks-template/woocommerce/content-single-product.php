@@ -40,7 +40,8 @@ if ( post_password_required() ) {
 	 * @hooked woocommerce_show_product_images - 20
 	 */
 	do_action( 'woocommerce_before_single_product_summary' );
-	?>
+
+    ?>
 	<div class="summary entry-summary">
 		<?php
 		/**
@@ -59,6 +60,7 @@ if ( post_password_required() ) {
 		?>
 	</div>
 	<?php
+
 	/**
 	 * Hook: woocommerce_after_single_product_summary.
 	 *
