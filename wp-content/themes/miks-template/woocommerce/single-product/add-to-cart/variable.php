@@ -44,6 +44,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                     <div class="title"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?>:</div>
                     <div class="inline-select">
                         <?php
+
                         asort($options);
                         foreach ($options as $option): ?>
                             <a href="#"
@@ -56,7 +57,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
             </div>
 
-		<table class="variations" cellspacing="0" style="display: none">
+		<table class="variations" cellspacing="0" >
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 				<tr>
@@ -65,6 +66,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 					</th>
 					<td class="value">
 						<?php
+
 								wc_dropdown_variation_attribute_options(
 									array(
 										'options'   => $options,
