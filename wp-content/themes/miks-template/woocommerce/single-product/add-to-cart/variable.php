@@ -57,7 +57,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 
             </div>
 
-		<table class="variations" cellspacing="0"  style="display: none">
+            <table class="variations" cellspacing="0"  style="display: none">
 			<tbody>
 				<?php foreach ( $attributes as $attribute_name => $options ) : ?>
 				<tr>
