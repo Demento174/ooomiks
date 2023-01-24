@@ -256,3 +256,5 @@ function logs($txt,$directory=null,$settings=null)
     \Classes\LogsClass\Logs::write($txt,$directory,$settings);
 }
 
+
+

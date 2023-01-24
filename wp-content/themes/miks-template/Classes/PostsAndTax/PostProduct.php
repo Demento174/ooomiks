@@ -642,7 +642,7 @@ class PostProduct extends PostAbstract implements Price,
             and
                 !empty($filters['price']['to']))
             {
-                dump(2);
+
                 foreach ($result as $key=>$_product)
                 {
 

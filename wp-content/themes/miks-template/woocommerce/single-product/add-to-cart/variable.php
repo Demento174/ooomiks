@@ -43,7 +43,9 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                 <?php foreach ( $attributes as $attribute_name => $options ) : ?>
                     <div class="title"><?php echo wc_attribute_label( $attribute_name ); // WPCS: XSS ok. ?>:</div>
                     <div class="inline-select">
-                        <?php foreach ($options as $option): ?>
+                        <?php
+                        asort($options);
+                        foreach ($options as $option): ?>
                             <a href="#"
                                data-value="<?=$option?>"
                                data-attribute-name="<?=$attribute_name?>" <?php if(isset($default_attribute[$attribute_name]) and $option === $default_attribute[$attribute_name]):?> class="active" <?php endif;?> ><?=$option?></a>
@@ -109,3 +111,5 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
 </div>
 <?php
 do_action( 'woocommerce_after_add_to_cart_form' );
+?>
+

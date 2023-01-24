@@ -55,11 +55,13 @@ add_action( 'woocommerce_single_product_summary', 'woocommerce_upsell_display', 
 
 add_filter('woocommerce_short_description', 'miks_short_dicription');
 function miks_short_dicription($content){
-    ?>
+    if(!is_product()):?>
 <div class="tovar-short-discription">
 	<?php echo $content ?>
 </div>
-<?php 
+<?php
+endif;
+
 }
 
 /* Удалить сайтбар из катрочки товара */

@@ -37,7 +37,7 @@ $wrapper_classes   = apply_filters(
 );
 ?>
 <div class="<?php echo esc_attr( implode( ' ', array_map( 'sanitize_html_class', $wrapper_classes ) ) ); ?>" data-columns="<?php echo esc_attr( $columns ); ?>" style="opacity: 0; transition: opacity .25s ease-in-out;">
-	<figure class="woocommerce-product-gallery__wrapper">
+	<figure class="woocommerce-product-gallery__wrapper main">
 		<?php
 		if ( $post_thumbnail_id ) {
 			$html = wc_get_gallery_image_html( $post_thumbnail_id, true );
@@ -52,4 +52,32 @@ $wrapper_classes   = apply_filters(
 		do_action( 'woocommerce_product_thumbnails' );
 		?>
 	</figure>
+
+    <?php
+    global $post;
+    $_product = new WC_Product_Variable( $post->ID );
+    $variations = $_product->get_available_variations();
+
+    if($variations)
+    {
+        foreach ( $variations as $variation ):?>
+
+            <figure variation-id="<?=$variation['variation_id']?>" class="woocommerce-product-gallery__wrapper variation_images" style="display: none" >
+                <?php
+                $html = wc_get_gallery_image_html( $variation['image_id'], true );
+                ?>
+                <div class="variation_image">
+                <?php
+                echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $variation['image_id'] ); // phpcs:disable WordPress.XSS.EscapeOutput.OutputNotEscaped
+
+                do_action( 'woocommerce_product_thumbnails' );
+                ?>
+                </div>
+            </figure>
+        <?php
+            endforeach;
+
+    }
+
+    ?>
 </div>

@@ -52,16 +52,17 @@ if ( is_page('my-account') ){
 	), '1.8', 'all' );
 }
 	//wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery-burger', get_template_directory_uri() . '/assets/js/jquery-burger.js', false, '1.8', 'footer', true );
-	//wp_register_script( 'jquery-mini-1', get_template_directory_uri() . '/assets/js/jquery.min.js', false, '1.8','footer', true );
-	wp_enqueue_script( 'jquery-burger' );
-	//wp_enqueue_script( 'jquery-mini-1' );
-	wp_enqueue_script( 'burger-nav', get_template_directory_uri() . '/assets/js/burger-nav.js', array( 'jquery'), '1.8',
+    //wp_register_script( 'jquery-mini-1', get_template_directory_uri() . '/assets/js/jquery.min.js', false, '1.8','footer', true );
+    //wp_enqueue_script( 'jquery-mini-1' );
+
+    wp_register_script( 'jquery-burger', get_template_directory_uri() . '/assets/js/jquery-burger.js', false, '1.8', 'footer', true );
+    wp_enqueue_script( 'jquery-burger' );
+    wp_enqueue_script( 'burger-nav', get_template_directory_uri() . '/assets/js/burger-nav.js', array( 'jquery'), '1.8',
 	'footer');
 	wp_enqueue_script( 'drop-menue', get_template_directory_uri() . '/assets/js/drop-menue.js', array( 'jquery'), '1.8',
 	'footer');
 
-    wp_enqueue_script( 'demento', get_template_directory_uri() . '/assets/build/js/index.js',null,null,true);
+    wp_enqueue_script( 'demento', get_template_directory_uri() . '/assets/build/js/index.js',['wc-add-to-cart-variation'],null,true);
 
 	// Адаптивные стили
 	wp_enqueue_style( 'pc-style', get_template_directory_uri() . '/assets/css/pc-style.css', array( 'miks-pages' ), '1.8',

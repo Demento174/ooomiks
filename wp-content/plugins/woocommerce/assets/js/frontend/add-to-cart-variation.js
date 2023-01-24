@@ -3,6 +3,7 @@
 	/**
 	 * VariationForm class which handles variation forms and attributes.
 	 */
+
 	var VariationForm = function( $form ) {
 		var self = this;
 
