@@ -3111,6 +3111,7 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 		$html .= '<option value="">' . esc_html( $show_option_none_text ) . '</option>';
 
 		if ( ! empty( $options ) ) {
+
 			if ( $product && taxonomy_exists( $attribute ) ) {
 				// Get terms if this is a taxonomy - ordered. We need the names too.
 				$terms = wc_get_product_terms(
@@ -3126,6 +3127,7 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 						$html .= '<option value="' . esc_attr( $term->slug ) . '" ' . selected( sanitize_title( $args['selected'] ), $term->slug, false ) . '>' . esc_html( apply_filters( 'woocommerce_variation_option_name', $term->name, $term, $attribute, $product ) ) . '</option>';
 					}
 				}
+
 			} else {
 				foreach ( $options as $option ) {
 					// This handles < 2.4.0 bw compatibility where text attributes were not sanitized.
