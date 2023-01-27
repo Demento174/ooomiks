@@ -31,7 +31,7 @@ $heading = apply_filters( 'woocommerce_product_additional_information_heading', 
 
 	<h2><?php echo esc_html( $heading ); ?></h2>
 <?php endif; ?>
-<div class="main_additional-information">
+<div class="main_additional-information main_content">
     <?php do_action( 'woocommerce_product_additional_information', $product ); ?>
 </div>
 <?php if($variations): ?>
