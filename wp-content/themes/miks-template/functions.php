@@ -346,3 +346,4 @@ function recaptcha_validation_checkout_process() {
         }
     }
 }
+

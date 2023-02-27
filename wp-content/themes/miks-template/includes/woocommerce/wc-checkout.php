@@ -63,12 +63,14 @@ function custom_override_checkout_fields( $fields ) {
     return $fields;
 }
 // Меняем приоритет адреса доставки
-add_filter('woocommerce_default_address_fields', 'wc_override_address_fields');
+add_filter('woocommerce_default_address_fiels', 'wc_override_address_fields');
 function wc_override_address_fields( $fields ) {
 	$fields['address_1']['placeholder'] = 'Улица и номер дома...*';
 	$fields['address_1']['priority'] = 80;
 	return $fields;
 }
+
+
 
 // Добавление выбора физ. или юр. лицо
 add_action( 'woocommerce_after_checkout_billing_form', 'organisation_checkout_field' );
@@ -352,7 +354,9 @@ function my_custom_checkout_field_display_admin_order_meta($order){
 
 /* добавление онформации на почту */
 add_action( 'woocommerce_email_customer_details', 'woocommerce_email_after_order_table_func', 50 );
-function woocommerce_email_after_order_table_func() {
+function woocommerce_email_after_order_table_func($order_id) {
+
+
 	$current_user = wp_get_current_user();
 	$user_id = $current_user->ID;
 	$user_id_company = get_user_meta( $user_id, 'company', 'on' );
@@ -401,18 +405,143 @@ function save_favorite_color_account_details( $user_id ) {
 
 /* Скрывать способы доставки */
 add_filter( 'woocommerce_package_rates', 'truemisha_remove_shipping_method', 20, 2 );
-function truemisha_remove_shipping_method( $rates, $package ) {
+function truemisha_remove_shipping_method( $rates, $package )
+{
   
 	// удаляем способ доставки, если доступна бесплатная
-	if ( isset( $rates[ 'free_shipping:1' ] ) ) {
-	    unset( $rates[ 'flat_rate:2' ] );
-	}
+	if ( isset( $rates[ 'free_shipping:8' ] ) )
+    {
+        unset( $rates[ 'flat_rate:7' ] );
+    }
+    if ( isset( $rates[ 'free_shipping:1' ] ) ) {
+        unset( $rates[ 'flat_rate:2' ] );
+    }
 	if ( isset( $rates[ 'free_shipping:3' ] ) ) {
 	    unset( $rates[ 'free_shipping:1' ] );
       unset( $rates[ 'flat_rate:2' ] );
 	}
+
+
+
 	return $rates;
 }
+
+// Добавления поля "Название транспортной". Показывается только при выборе Доставка транспортной компании
+add_action( 'woocommerce_after_checkout_billing_form', function ($checkout ) {
+
+    woocommerce_form_field(
+        'delivery_company',
+        array(
+            'type'          => 'text', // text, textarea, select, radio, checkbox, password
+            'required'	    => false, // по сути только добавляет значок "*" и всё
+            'class'         => array( 'input-text ' ), // массив классов поля
+            'label'         => 'Название транспортной компании',
+            'label_class'   => 'screen-reader-text', // класс лейбла
+            'placeholder'   => 'Название транспортной компании',
+
+        ),
+        $checkout->get_value( 'delivery_company' )
+    );
+
+} );
+// Сохранение поле "Название транспортной"
+add_action( 'woocommerce_checkout_update_order_meta', function ( $order_id ){
+
+    if( ! empty( $_POST[ 'delivery_company' ] ) ) {
+        update_post_meta( $order_id, 'delivery_company', sanitize_text_field( $_POST[ 'delivery_company' ] ) );
+    }
+
+}, 25 );
+// возможность редактирования поля в административной части
+add_action( 'woocommerce_admin_order_data_after_billing_address', function ( $order ){
+
+    $method = get_post_meta( $order->get_id(), 'delivery_company', true );
+
+    echo '<div class="address">
+		<p' . ( ! $method ? ' class="none_set"' : '' ) . '>
+			<strong>Название транспортной:</strong>
+			' . ( $method ? $method : 'Не указан.' ) . '
+		</p>
+	</div>
+	<div class="edit_address">';
+    woocommerce_wp_select( array(
+        'id' => 'delivery_company',
+        'label' => 'Название транспортной:',
+        'wrapper_class' => 'form-field-wide',
+        'value' => $method,
+    ) );
+    echo '</div>';
+
+}, 25 );
+// и сохраняем
+add_action( 'woocommerce_process_shop_order_meta', function ( $order_id ){
+    update_post_meta( $order_id, 'delivery_company', wc_clean( $_POST[ 'billing_contactmethod' ] ) );
+});
+/**
+ * Прелоад при переключении доставки
+ *
+ * @sourcecode    https://wpruse.ru/woocommerce/hiding-fields-on-chosen-delivery/
+ * @author        Artem Abramovich
+ * @testedwith    WC 5.5
+ */
+add_action( 'wp_footer', function () {
+
+    if ( is_checkout() ) {
+        ?>
+        <!--Скроем поле Страна. Если успользуется поле Страна, то следцет убрать скрытие-->
+        <style>
+            #delivery_company {
+                display: none;
+            }
+        </style>
+
+        <!--Выполняем обновление полей при переключении доставки-->
+        <script>
+            jQuery( document ).ready( function( $ ) {
+                $( document.body ).on( 'updated_checkout updated_shipping_method', function( event, xhr, data ) {
+
+                    if(['flat_rate:7','free_shipping:8'].includes(document.querySelector('input[name^="shipping_method[0]"]:checked').value))
+                        document.querySelector('#delivery_company').style.display = 'block';
+                    else
+                        document.querySelector('#delivery_company').style.display = 'none';
+
+                    $( 'input[name^="shipping_method[0]"]' ).on( 'change', function(e)
+                    {
+                        if(['flat_rate:7','free_shipping:8'].includes(e.currentTarget.getAttribute('value')))
+                            document.querySelector('#delivery_company').style.display = 'block';
+                        else
+                            document.querySelector('#delivery_company').style.display = 'none';
+
+                    } );
+                } );
+            } );
+        </script>
+        <?php
+    }
+} );
+// Добавление новых данных в письмо
+add_filter( 'woocommerce_get_order_item_totals', function ( $rows, $order ) {
+
+    // удалите это условие, если хотите добавить значение поля и на страницу "Заказ принят"
+    if( is_order_received_page() )
+    {
+        return $rows;
+    }
+    if(get_post_meta( $order->get_id(), 'delivery_company', true ))
+    {
+        $rows[ 'delivery_company' ] = array(
+            'label' => 'Название транспортной',
+            'value' => get_post_meta( $order->get_id(), 'delivery_company', true )
+        );
+    }
+
+
+    return $rows;
+
+}, 25, 2 );
+
+
+
 
 /* Способы оплаты */
 

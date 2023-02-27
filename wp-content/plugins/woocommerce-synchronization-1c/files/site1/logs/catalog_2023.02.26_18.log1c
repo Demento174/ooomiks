@@ -1,0 +1,141 @@
+[2023-02-26 13:38:30 | 63fb60d670d61.63fb60d670d63] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=checkauth","Usage, mb":"29.83","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:30 | 63fb60d670d61.63fb60d670d63] wc1c.INFO: [cookie list] []
+[2023-02-26 13:38:30 | 63fb60d670d61.63fb60d670d63] wc1c.INFO: success - PHPSESSID ba07e9f5f790ab0b6b0eab547d8773b6  []
+[2023-02-26 13:38:30 | 63fb60d670d61.63fb60d670d63] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=checkauth","Usage, mb":"29.85","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d74c96d] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=checkauth","Usage, mb":"29.83","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d74c96d] wc1c.INFO: [cookie list] []
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d74c96d] wc1c.INFO: success - PHPSESSID fbd208ab2883d1da5bd94ab6c10e48da  []
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d74c96d] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=checkauth","Usage, mb":"29.85","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d7c572d] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=init&sessid=","Usage, mb":"29.83","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d7c572d] wc1c.INFO: [cookie list] {"PHPSESSID":"fbd208ab2883d1da5bd94ab6c10e48da"}
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d7c572d] wc1c.INFO: php `memory_limit` string - 268435456 []
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d7c572d] wc1c.INFO: setting `not_delete_exchange_files` is enabled, data from the previous exchange session is not deleted []
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d7c572d] wc1c.INFO: zip=yes, file_limit=5000000 []
+[2023-02-26 13:38:31 | 63fb60d74c96b.63fb60d7c572d] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=init&sessid=","Usage, mb":"29.85","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d85ac2f] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=file&filename=v8_268E_40.zip&sessid=","Usage, mb":"29.84","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"POST","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d85ac2f] wc1c.INFO: [cookie list] {"PHPSESSID":"fbd208ab2883d1da5bd94ab6c10e48da"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d85ac2f] wc1c.INFO: success []
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d85ac2f] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=file&filename=v8_268E_40.zip&sessid=","Usage, mb":"29.86","Peak, mb":"29.97","Ip":"92.255.247.111","Method":"POST","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=import&filename=import0_1.xml&sessid=","Usage, mb":"29.84","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [cookie list] {"PHPSESSID":"fbd208ab2883d1da5bd94ab6c10e48da"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [zip] extract start - v8_268E_40.zip []
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [zip] archive info {"size":"0.096 MB","disk_free_space":"79556.5 MB"}
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [zip] full count files - 5 []
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [zip] extract end and unlink - v8_268E_40.zip []
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [progress] - [zip] extracted - v8_268E_40.zip []
+[2023-02-26 13:38:32 | 63fb60d74c96b.63fb60d8cb8bb] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=import&filename=import0_1.xml&sessid=","Usage, mb":"29.86","Peak, mb":"29.87","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=import&filename=import0_1.xml&sessid=","Usage, mb":"29.83","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: [cookie list] {"PHPSESSID":"fbd208ab2883d1da5bd94ab6c10e48da"}
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: XML, schema version - 2.07, generation date - 2023-02-26T18:38:29 []
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (product_cat) updated `term_id` - 10626 ["722e57c7-6451-11e1-8ad0-20cf30277a5c"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (product_cat) updated `term_id` - 10636 ["2119444f-f5a0-11e5-a53e-4c72b924646e"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) updated attribute by data `Свойства` - pa_dlina-l ["128","1c21f9cc-080b-11e5-8909-c8d3a3ad22be",{"attribute_label":"Длина (L)"}]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) start processing variants - pa_dlina-l ["1c21f9cc-080b-11e5-8909-c8d3a3ad22be"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) end processing variants - pa_dlina-l, count - 2 ["1c21f9cc-080b-11e5-8909-c8d3a3ad22be"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) updated attribute by data `Свойства` - pa_diametr-d1 ["152","d65b075e-26ad-11e5-a01a-c8d3a3ad22be",{"attribute_label":"Диаметр (d1)"}]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) start processing variants - pa_diametr-d1 ["d65b075e-26ad-11e5-a01a-c8d3a3ad22be"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) end processing variants - pa_diametr-d1, count - 2 ["d65b075e-26ad-11e5-a01a-c8d3a3ad22be"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) updated attribute by data `Свойства` - pa_dlinnaden ["162","57aab54b-db96-11ec-b14d-d85ed3562322",{"attribute_label":"ДлиннаДен"}]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) start processing variants - pa_dlinnaden ["57aab54b-db96-11ec-b14d-d85ed3562322"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) end processing variants - pa_dlinnaden, count - 1 ["57aab54b-db96-11ec-b14d-d85ed3562322"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) updated attribute by data `Свойства` - pa_diametrden ["163","c02af5ae-db96-11ec-b14d-d85ed3562322",{"attribute_label":"ДиаметрДен"}]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) start processing variants - pa_diametrden ["c02af5ae-db96-11ec-b14d-d85ed3562322"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: (attribute) end processing variants - pa_diametrden, count - 1 ["c02af5ae-db96-11ec-b14d-d85ed3562322"]
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: [progress] - options processing end... []
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d947da9] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=import&filename=import0_1.xml&sessid=","Usage, mb":"31.49","Peak, mb":"32.92","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=import&filename=import0_1.xml&sessid=","Usage, mb":"29.84","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [cookie list] {"PHPSESSID":"fbd208ab2883d1da5bd94ab6c10e48da"}
+[2023-02-26 13:38:33 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: XML, schema version - 2.07, generation date - 2023-02-26T18:38:29 []
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (product) empty `product_cat` list, ID - 227817 ["36472509-7651-11e2-b231-5404a6c4be79"]
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (product) updated post, ID - 227817, status - publish ["36472509-7651-11e2-b231-5404a6c4be79"]
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (product) update attributes lookup, ID - 227817 ["36472509-7651-11e2-b231-5404a6c4be79"]
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [start] images - 227817 []
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) set thumbnail image for ID - 227817 ["211224"]
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) set gallery for ID - 227817 ["211225"]
+[2023-02-26 13:38:34 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [end] images - 227817 []
+[2023-02-26 13:38:35 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (product) empty `product_cat` list, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:35 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (product) updated post, ID - 227818, status - publish ["9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:35 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [start] images - 227818 []
+[2023-02-26 13:38:35 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) removed image for ID - 227818 ["224133"]
+[2023-02-26 13:38:35 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) adding image for ID - 227818 {"size":"94.46 KB","name":"9bb88e8816b411ecbf474c72b924646e_b05facbc59b411ecbb744c72b924646e.jpg"}
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) added image for ID - 227818 [227827]
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) set thumbnail image for ID - 227818 [227827]
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: (image) set gallery for ID - 227818 ["224134"]
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [end] images - 227818 []
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: termsRecount1cSynchronization - task register []
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: success - import file import0_1.xml completed []
+[2023-02-26 13:38:36 | 63fb60d74c96b.63fb60d9cb789] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=import&filename=import0_1.xml&sessid=","Usage, mb":"31.3","Peak, mb":"36.7","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60dd59f63] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=checkauth","Usage, mb":"29.83","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60dd59f63] wc1c.INFO: [cookie list] []
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60dd59f63] wc1c.INFO: success - PHPSESSID 1ffe1d23f977d18617fa5e7cc9c63007  []
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60dd59f63] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=checkauth","Usage, mb":"29.85","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60ddbcd9b] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=init&sessid=","Usage, mb":"29.83","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60ddbcd9b] wc1c.INFO: [cookie list] {"PHPSESSID":"1ffe1d23f977d18617fa5e7cc9c63007"}
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60ddbcd9b] wc1c.INFO: php `memory_limit` string - 268435456 []
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60ddbcd9b] wc1c.INFO: setting `not_delete_exchange_files` is enabled, data from the previous exchange session is not deleted []
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60ddbcd9b] wc1c.INFO: zip=yes, file_limit=5000000 []
+[2023-02-26 13:38:37 | 63fb60dd59f60.63fb60ddbcd9b] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=init&sessid=","Usage, mb":"29.85","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de34f1b] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=file&filename=v8_268E_41.zip&sessid=","Usage, mb":"29.84","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"POST","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de34f1b] wc1c.INFO: [cookie list] {"PHPSESSID":"1ffe1d23f977d18617fa5e7cc9c63007"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de34f1b] wc1c.INFO: success []
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de34f1b] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=file&filename=v8_268E_41.zip&sessid=","Usage, mb":"29.85","Peak, mb":"29.87","Ip":"92.255.247.111","Method":"POST","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=import&filename=offers0_1.xml&sessid=","Usage, mb":"29.84","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [cookie list] {"PHPSESSID":"1ffe1d23f977d18617fa5e7cc9c63007"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [zip] extract start - v8_268E_41.zip []
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [zip] archive info {"size":"0.003 MB","disk_free_space":"79555.15 MB"}
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [zip] full count files - 1 []
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [zip] extract end and unlink - v8_268E_41.zip []
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [progress] - [zip] extracted - v8_268E_41.zip []
+[2023-02-26 13:38:38 | 63fb60dd59f60.63fb60de9757b] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=import&filename=offers0_1.xml&sessid=","Usage, mb":"29.86","Peak, mb":"29.87","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=import&filename=offers0_1.xml&sessid=","Usage, mb":"29.84","Peak, mb":"29.86","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: [cookie list] {"PHPSESSID":"1ffe1d23f977d18617fa5e7cc9c63007"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: XML, schema version - 2.07, generation date - 2023-02-26T18:38:29 []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: (attribute) updated attribute by data `Свойства` - pa_dlina-l ["128","1c21f9cc-080b-11e5-8909-c8d3a3ad22be",{"attribute_label":"Длина (L)"}]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: (attribute) start processing variants - pa_dlina-l ["1c21f9cc-080b-11e5-8909-c8d3a3ad22be"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: (attribute) end processing variants - pa_dlina-l, count - 1 ["1c21f9cc-080b-11e5-8909-c8d3a3ad22be"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: (attribute) updated attribute by data `Свойства` - pa_diametr-d1 ["152","d65b075e-26ad-11e5-a01a-c8d3a3ad22be",{"attribute_label":"Диаметр (d1)"}]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: (attribute) start processing variants - pa_diametr-d1 ["d65b075e-26ad-11e5-a01a-c8d3a3ad22be"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: (attribute) end processing variants - pa_diametr-d1, count - 1 ["d65b075e-26ad-11e5-a01a-c8d3a3ad22be"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: [progress] - options processing end... []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df0a05a] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=import&filename=offers0_1.xml&sessid=","Usage, mb":"30.2","Peak, mb":"30.88","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: [START REQUEST] {"Query":"type=catalog&mode=import&filename=offers0_1.xml&sessid=","Usage, mb":"29.84","Peak, mb":"29.85","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: [cookie list] {"PHPSESSID":"1ffe1d23f977d18617fa5e7cc9c63007"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: XML, schema version - 2.07, generation date - 2023-02-26T18:38:29 []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: remove products on full exchange - start - 2 []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: remove products on full exchange - end []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (price types) according to current data in xml {"70591617-a5f3-11ec-88bf-4c72b924646e":{"id":"70591617-a5f3-11ec-88bf-4c72b924646e","name":"Для нового сайта MIKS-handyhost","currency":"RUB"},"0e80eb74-b9c7-11ec-b14d-d85ed3562322":{"id":"0e80eb74-b9c7-11ec-b14d-d85ed3562322","name":"Цены интернет-магазин","currency":"RUB"},"3ada20f5-bbaf-11ec-b14d-d85ed3562322":{"id":"3ada20f5-bbaf-11ec-b14d-d85ed3562322","name":"Типовое соглашение с клиентами","currency":"RUB"},"155f93dd-7ad5-11ec-bb74-4c72b924646e":{"id":"155f93dd-7ad5-11ec-bb74-4c72b924646e","name":"Договор для сайта","currency":"RUB"},"b4fff7cf-b5d3-11ed-b164-d85ed3562322":{"id":"b4fff7cf-b5d3-11ed-b164-d85ed3562322","name":"Соглашение для сайта","currency":"RUB"},"54cb2661-bafd-11ec-b14d-d85ed3562322":{"id":"54cb2661-bafd-11ec-b14d-d85ed3562322","name":"Основной договор","currency":"RUB"},"28438acc-ae77-11ec-88bf-4c72b924646e":{"id":"28438acc-ae77-11ec-88bf-4c72b924646e","name":"Договор с покупателем","currency":"RUB"},"c045cea0-aff8-11ec-88bf-4c72b924646e":{"id":"c045cea0-aff8-11ec-88bf-4c72b924646e","name":"Основной договор","currency":"RUB"},"8e42e5c3-bfbe-11ec-b14d-d85ed3562322":{"id":"8e42e5c3-bfbe-11ec-b14d-d85ed3562322","name":"Основной договор","currency":"RUB"},"2e7ef2a0-d40c-11ec-b14d-d85ed3562322":{"id":"2e7ef2a0-d40c-11ec-b14d-d85ed3562322","name":"Цены розница","currency":"RUB"},"59bf38a2-e2fb-11ec-b14d-d85ed3562322":{"id":"59bf38a2-e2fb-11ec-b14d-d85ed3562322","name":"Договор с покупателем","currency":"RUB"},"9f2e137a-fc53-11ec-b14d-d85ed3562322":{"id":"9f2e137a-fc53-11ec-b14d-d85ed3562322","name":"Основной договор","currency":"RUB"},"8472cc51-073c-11ed-b14d-d85ed3562322":{"id":"8472cc51-073c-11ed-b14d-d85ed3562322","name":"Основной договор","currency":"RUB"},"e438a786-0bf4-11ed-b150-d85ed3562322":{"id":"e438a786-0bf4-11ed-b150-d85ed3562322","name":"Основной договор","currency":"RUB"},"fc414273-2e92-11ed-b153-d85ed3562322":{"id":"fc414273-2e92-11ed-b153-d85ed3562322","name":"Основной договор","currency":"RUB"},"da79102f-4586-11ec-b289-4c72b924646e":{"id":"da79102f-4586-11ec-b289-4c72b924646e","name":"Договор с покупателем","currency":"RUB"},"578dabe8-504b-11ec-bb74-4c72b924646e":{"id":"578dabe8-504b-11ec-bb74-4c72b924646e","name":"Договор для нового сайта","currency":"RUB"}}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (settings) current price configuration {"rule":"regular_and_sale","regular":"2e7ef2a0-d40c-11ec-b14d-d85ed3562322","sale":"0e80eb74-b9c7-11ec-b14d-d85ed3562322"}
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) empty price value - skip - for ID - 227817 [0,"36472509-7651-11e2-b231-5404a6c4be79"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) Updated stock set for ID - 227817 [0,"36472509-7651-11e2-b231-5404a6c4be79"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (hide) set stock status, ID - 227817 ["outofstock"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) update attributes lookup, ID - 227817 ["36472509-7651-11e2-b231-5404a6c4be79"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) Updated, ID - 227820, parent ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e#bf56d6ea-e3d6-11eb-bf46-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) updated `_regular_price` for ID - 227820, parent ID - 227818 [218,"9bb88e88-16b4-11ec-bf47-4c72b924646e#bf56d6ea-e3d6-11eb-bf46-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) updated `_sale_price` for ID - 227820, parent ID - 227818 ["","9bb88e88-16b4-11ec-bf47-4c72b924646e#bf56d6ea-e3d6-11eb-bf46-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) updated `_price` for ID - 227820, parent ID - 227818 [218,"9bb88e88-16b4-11ec-bf47-4c72b924646e#bf56d6ea-e3d6-11eb-bf46-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) Updated stock set for ID - 227820, parent ID - 227818 [2,"9bb88e88-16b4-11ec-bf47-4c72b924646e#bf56d6ea-e3d6-11eb-bf46-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (show) set stock status, ID - 227820 ["instock"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) Updated, ID - 227819, parent ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e#9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) updated `_regular_price` for ID - 227819, parent ID - 227818 [175,"9bb88e88-16b4-11ec-bf47-4c72b924646e#9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) updated `_sale_price` for ID - 227819, parent ID - 227818 ["","9bb88e88-16b4-11ec-bf47-4c72b924646e#9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) updated `_price` for ID - 227819, parent ID - 227818 [175,"9bb88e88-16b4-11ec-bf47-4c72b924646e#9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (variation) Updated stock set for ID - 227819, parent ID - 227818 [4,"9bb88e88-16b4-11ec-bf47-4c72b924646e#9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (show) set stock status, ID - 227819 ["instock"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: fired `save` to changed price/stock simple product - start, state - only clear cache []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: fired `save` to changed price/stock simple product - end []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: maybe unvariable start []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: maybe unvariable end []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: variable product sync - start []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) sync variable - 227818 []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: variable product sync - end []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: variable product set visibility - start []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (show) set stock status, ID - 227818 ["instock"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) update attributes lookup, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: variable product set visibility - end []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) Set variation attribute, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e","pa_diametr-d1"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) Set attribute terms, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e",[34801],"pa_diametr-d1"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) Set variation attribute, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e","pa_dlina-l"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) Set attribute terms, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e",[13256],"pa_dlina-l"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: (product) Unset variation attribute, ID - 227818 ["9bb88e88-16b4-11ec-bf47-4c72b924646e","pa_naimenovanie-dlya-sajta"]
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: success - import file offers0_1.xml completed []
+[2023-02-26 13:38:39 | 63fb60dd59f60.63fb60df728d8] wc1c.INFO: [END REQUEST] {"Query":"type=catalog&mode=import&filename=offers0_1.xml&sessid=","Usage, mb":"31.28","Peak, mb":"33.64","Ip":"92.255.247.111","Method":"GET","User":"1c-user","Site":"https://proletariat74.ru"}

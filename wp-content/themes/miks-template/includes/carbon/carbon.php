@@ -99,6 +99,10 @@ function crb_attach_theme_options() {
             Field::make( 'image', 'photo_slide', 'Фото слайда'),
             Field::make( 'text', 'photo_title', 'Заголовок слайда (отображается в центре)'),
             Field::make( 'textarea', 'photo_disc', 'Текст описания слайда (отображается под заголовком)'),
+            Field::make( 'text', 'link', 'Ссылка'),
+            Field::make( 'checkbox', '_blank', 'Открывать ссылку в новом окне?' )
+                ->set_option_value( 'yes' )
+
         ))));
 
     Container::make( 'post_meta', 'Плюсы нашей компании: (Желательно заполнять не больше 5)' )

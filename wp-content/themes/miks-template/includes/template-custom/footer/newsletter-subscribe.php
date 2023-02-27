@@ -7,14 +7,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="newsletter-container-content">
 		<h2>Подпишитесь на рассылку новостей!</h2>
-		<p>Оставайтесь всегда в курсе новостей нашего интернет магизина!</p>
+		<p>Оставайтесь всегда в курсе новостей нашего интернет магазина!</p>
 	</div>
 
 	<div class="newsletter-container-content">
-		<form action="#" class="footer__newsletter">
-			<input type="text" class="newsletter-email" placeholder="Ваш e-mail" name="mail" required><input type="submit"
-				class="newsletter-button" value="Подписаться">
-
-		</form>
+      <?=do_shortcode('[contact-form-7 id="227793" title="Подписаться на новости"]') ?>
 	</div>
 </div>
