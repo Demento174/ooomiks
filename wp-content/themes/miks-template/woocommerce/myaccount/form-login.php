@@ -53,6 +53,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 			<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
 			<p class="woocommerce-form-row form-row">
+          
 				<button type="submit" class="woocommerce-button woocommerce-form-login__submit" name="login"
 					value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Log in', 'woocommerce' ); ?></button>
 			</p>

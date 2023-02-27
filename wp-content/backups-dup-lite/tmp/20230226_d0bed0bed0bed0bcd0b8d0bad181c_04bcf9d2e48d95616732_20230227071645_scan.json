@@ -1,0 +1,665 @@
+{
+    "RPT": {
+        "ScanTime": "0.35 sec.",
+        "ScanFile": "20230226_d0bed0bed0bed0bcd0b8d0bad181c_04bcf9d2e48d95616732_20230227071645_scan.json",
+        "Warnings": 2,
+        "Success": 4
+    },
+    "SRV": {
+        "PHP": {
+            "websrv": true,
+            "openbase": true,
+            "maxtime": true,
+            "mysqli": true,
+            "version": true
+        },
+        "SYS": {
+            "managedHost": true,
+            "ALL": "Good"
+        },
+        "WP": {
+            "version": true,
+            "core": true,
+            "ismu": false,
+            "ALL": "Good"
+        }
+    },
+    "ARC": {
+        "Size": "0B",
+        "DirCount": "0",
+        "FileCount": "0",
+        "FullCount": "0",
+        "WarnFileCount": 0,
+        "WarnDirCount": 0,
+        "UnreadableDirCount": 0,
+        "UnreadableFileCount": 0,
+        "FilterDirsAll": [
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/.opcache",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/ai1wm-backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/backups-dup-lite",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/backups-dup-pro",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/backupwordpress",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/bps-backup",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/cache",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/content\/cache",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/contents\/cache",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/infinitewp\/backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/managewp\/backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/old-cache",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/updraft",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/2022\/04",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/2022\/05",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/2022\/12",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/aiowps_backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/backupbuddy_backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/backupbuddy_temp",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/ithemes-security\/backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/mainwp\/backup",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/pb_backupbuddy",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/snapshots",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/sucuri",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/wp-clone",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/wp_all_backup",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/wpbackitup_backups",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/wfcache",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/wishlist-backup",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-snapshots"
+        ],
+        "FilterFilesAll": [
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads",
+            "error_log",
+            "error.log",
+            "debug_log",
+            "ws_ftp.log",
+            "dbcache",
+            "pgcache",
+            "objectcache",
+            ".DS_Store",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/.htaccess",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/web.config",
+            "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-config.php"
+        ],
+        "FilterExtsAll": [],
+        "FilterInfo": {
+            "Dirs": {
+                "Warning": [],
+                "Unreadable": [],
+                "AddonSites": [],
+                "Core": [
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-snapshots",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/backups-dup-lite",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/.opcache",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/backups-dup-pro",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/ai1wm-backups",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/backupwordpress",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/content\/cache",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/contents\/cache",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/infinitewp\/backups",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/managewp\/backups",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/old-cache",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/plugins\/all-in-one-wp-migration\/storage",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/updraft",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/wishlist-backup",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/wfcache",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/bps-backup",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/cache",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/aiowps_backups",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/backupbuddy_temp",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/backupbuddy_backups",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/ithemes-security\/backups",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/mainwp\/backup",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/pb_backupbuddy",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/snapshots",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/sucuri",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/wp-clone",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/wp_all_backup",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/wpbackitup_backups"
+                ],
+                "Global": [],
+                "Instance": [
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/2022\/04",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/2022\/05",
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads\/2022\/12"
+                ]
+            },
+            "Files": {
+                "Size": [],
+                "Warning": [],
+                "Unreadable": [],
+                "AddonSites": [],
+                "Core": [],
+                "Global": [
+                    "error_log",
+                    "error.log",
+                    "debug_log",
+                    "ws_ftp.log",
+                    "dbcache",
+                    "pgcache",
+                    "objectcache",
+                    ".DS_Store"
+                ],
+                "Instance": [
+                    "\/var\/www\/u119216\/data\/www\/ooomiks.com\/wp-content\/uploads"
+                ]
+            },
+            "Exts": {
+                "Core": [],
+                "Global": [],
+                "Instance": []
+            },
+            "UDirCount": 0,
+            "UFileCount": 0,
+            "UExtCount": 0,
+            "TreeSize": [],
+            "TreeWarning": []
+        },
+        "RecursiveLinks": [],
+        "UnreadableItems": [],
+        "Status": {
+            "Size": "Good",
+            "Names": "Good",
+            "UnreadableItems": "Good",
+            "MigratePackage": "Good",
+            "CanbeMigratePackage": true,
+            "showCreateProcFuncStatus": "Good",
+            "showCreateProcFunc": true,
+            "AddonSites": "Good"
+        },
+        "Dirs": [],
+        "Files": []
+    },
+    "DB": {
+        "Status": {
+            "Success": true,
+            "DB_Case": "Good",
+            "DB_Rows": "Warn",
+            "DB_Size": "Warn",
+            "TBL_Case": "Good",
+            "TBL_Rows": "Warn",
+            "TBL_Size": "Warn",
+            "Triggers": "Good"
+        },
+        "Size": 570703872,
+        "Rows": 1384540,
+        "TableCount": 78,
+        "TableList": {
+            "wp_actionscheduler_actions": {
+                "Case": 0,
+                "Rows": "701",
+                "Size": "528KB",
+                "USize": "540672"
+            },
+            "wp_actionscheduler_claims": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_actionscheduler_groups": {
+                "Case": 0,
+                "Rows": "8",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_actionscheduler_logs": {
+                "Case": 0,
+                "Rows": "4,595",
+                "Size": "576KB",
+                "USize": "589824"
+            },
+            "wp_aioseo_cache": {
+                "Case": 0,
+                "Rows": "139",
+                "Size": "3.55MB",
+                "USize": "3719168"
+            },
+            "wp_aioseo_notifications": {
+                "Case": 0,
+                "Rows": "1",
+                "Size": "80KB",
+                "USize": "81920"
+            },
+            "wp_aioseo_posts": {
+                "Case": 0,
+                "Rows": "20,102",
+                "Size": "17.97MB",
+                "USize": "18841600"
+            },
+            "wp_berocket_termmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_braapf_product_stock_status_parent": {
+                "Case": 0,
+                "Rows": "19,552",
+                "Size": "1.83MB",
+                "USize": "1916928"
+            },
+            "wp_braapf_product_variation_attributes": {
+                "Case": 0,
+                "Rows": "34",
+                "Size": "64KB",
+                "USize": "65536"
+            },
+            "wp_braapf_term_taxonomy_hierarchical": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "64KB",
+                "USize": "65536"
+            },
+            "wp_braapf_variable_attributes": {
+                "Case": 0,
+                "Rows": "8",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_commentmeta": {
+                "Case": 0,
+                "Rows": "4",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_comments": {
+                "Case": 0,
+                "Rows": "587",
+                "Size": "368KB",
+                "USize": "376832"
+            },
+            "wp_duplicator_packages": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_gglcptch_allowlist": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_links": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_newsletter": {
+                "Case": 0,
+                "Rows": "1",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_newsletter_emails": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_newsletter_sent": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_newsletter_stats": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_newsletter_user_logs": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_options": {
+                "Case": 0,
+                "Rows": "31,766",
+                "Size": "21.25MB",
+                "USize": "22282240"
+            },
+            "wp_postmeta": {
+                "Case": 0,
+                "Rows": "739,244",
+                "Size": "292.8MB",
+                "USize": "307019776"
+            },
+            "wp_posts": {
+                "Case": 0,
+                "Rows": "50,882",
+                "Size": "55.73MB",
+                "USize": "58441728"
+            },
+            "wp_rank_math_404_logs": {
+                "Case": 0,
+                "Rows": "92",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_rank_math_analytics_inspections": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "128KB",
+                "USize": "131072"
+            },
+            "wp_rank_math_analytics_objects": {
+                "Case": 0,
+                "Rows": "18,787",
+                "Size": "9.03MB",
+                "USize": "9469952"
+            },
+            "wp_rank_math_internal_links": {
+                "Case": 0,
+                "Rows": "3",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_rank_math_internal_meta": {
+                "Case": 0,
+                "Rows": "19,584",
+                "Size": "1.52MB",
+                "USize": "1589248"
+            },
+            "wp_rank_math_redirections": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_rank_math_redirections_cache": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_robomarket_orders": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_sms_stats": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_smush_dir_images": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_termmeta": {
+                "Case": 0,
+                "Rows": "54,300",
+                "Size": "12.06MB",
+                "USize": "12648448"
+            },
+            "wp_terms": {
+                "Case": 0,
+                "Rows": "22,003",
+                "Size": "14.59MB",
+                "USize": "15302656"
+            },
+            "wp_term_relationships": {
+                "Case": 0,
+                "Rows": "125,532",
+                "Size": "10.03MB",
+                "USize": "10518528"
+            },
+            "wp_term_taxonomy": {
+                "Case": 0,
+                "Rows": "26,392",
+                "Size": "5.55MB",
+                "USize": "5816320"
+            },
+            "wp_usermeta": {
+                "Case": 0,
+                "Rows": "15,478",
+                "Size": "3.2MB",
+                "USize": "3358720"
+            },
+            "wp_users": {
+                "Case": 0,
+                "Rows": "980",
+                "Size": "576KB",
+                "USize": "589824"
+            },
+            "wp_wc_admin_notes": {
+                "Case": 0,
+                "Rows": "33",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_wc_admin_note_actions": {
+                "Case": 0,
+                "Rows": "44",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_wc_category_lookup": {
+                "Case": 0,
+                "Rows": "2,150",
+                "Size": "96KB",
+                "USize": "98304"
+            },
+            "wp_wc_customer_lookup": {
+                "Case": 0,
+                "Rows": "125",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_wc_download_log": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_wc_order_coupon_lookup": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_wc_order_product_lookup": {
+                "Case": 0,
+                "Rows": "783",
+                "Size": "288KB",
+                "USize": "294912"
+            },
+            "wp_wc_order_stats": {
+                "Case": 0,
+                "Rows": "212",
+                "Size": "96KB",
+                "USize": "98304"
+            },
+            "wp_wc_order_tax_lookup": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_wc_product_attributes_lookup": {
+                "Case": 0,
+                "Rows": "30,173",
+                "Size": "5.03MB",
+                "USize": "5275648"
+            },
+            "wp_wc_product_download_directories": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_wc_product_meta_lookup": {
+                "Case": 0,
+                "Rows": "31,902",
+                "Size": "9.56MB",
+                "USize": "10027008"
+            },
+            "wp_wc_rate_limits": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_wc_reserved_stock": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_wc_tax_rate_classes": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_wc_webhooks": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_woocommerce_api_keys": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_woocommerce_attribute_taxonomies": {
+                "Case": 0,
+                "Rows": "98",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_woocommerce_downloadable_product_permissions": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "80KB",
+                "USize": "81920"
+            },
+            "wp_woocommerce_log": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_woocommerce_order_itemmeta": {
+                "Case": 0,
+                "Rows": "9,766",
+                "Size": "2.02MB",
+                "USize": "2113536"
+            },
+            "wp_woocommerce_order_items": {
+                "Case": 0,
+                "Rows": "1,072",
+                "Size": "208KB",
+                "USize": "212992"
+            },
+            "wp_woocommerce_payment_tokenmeta": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_woocommerce_payment_tokens": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_woocommerce_sessions": {
+                "Case": 0,
+                "Rows": "35",
+                "Size": "112KB",
+                "USize": "114688"
+            },
+            "wp_woocommerce_shipping_zones": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_woocommerce_shipping_zone_locations": {
+                "Case": 0,
+                "Rows": "2",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_woocommerce_shipping_zone_methods": {
+                "Case": 0,
+                "Rows": "6",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_woocommerce_tax_rates": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "80KB",
+                "USize": "81920"
+            },
+            "wp_woocommerce_tax_rate_locations": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            },
+            "wp_wpforms_tasks_meta": {
+                "Case": 0,
+                "Rows": "57",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_wpmailsmtp_debug_events": {
+                "Case": 0,
+                "Rows": "12",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_wpmailsmtp_tasks_meta": {
+                "Case": 0,
+                "Rows": "1",
+                "Size": "16KB",
+                "USize": "16384"
+            },
+            "wp_yoast_indexable": {
+                "Case": 0,
+                "Rows": "80,081",
+                "Size": "63.67MB",
+                "USize": "66764800"
+            },
+            "wp_yoast_indexable_hierarchy": {
+                "Case": 0,
+                "Rows": "77,184",
+                "Size": "10.06MB",
+                "USize": "10551296"
+            },
+            "wp_yoast_migrations": {
+                "Case": 0,
+                "Rows": "23",
+                "Size": "32KB",
+                "USize": "32768"
+            },
+            "wp_yoast_primary_term": {
+                "Case": 0,
+                "Rows": "0",
+                "Size": "48KB",
+                "USize": "49152"
+            }
+        },
+        "RawSize": 570703872,
+        "EasySize": "544.27MB"
+    },
+    "LL": {
+        "TotalSize": "544.27MB",
+        "Status": {
+            "TotalSize": "Fail"
+        }
+    }
+}

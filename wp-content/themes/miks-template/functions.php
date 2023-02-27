@@ -257,4 +257,92 @@ function logs($txt,$directory=null,$settings=null)
 }
 
 
+add_action('woocommerce_register_form','recaptcha_tag');
+add_action('woocommerce_login_form','recaptcha_tag');
+add_action( 'woocommerce_checkout_before_order_review','recaptcha_tag' );
 
+
+
+function recaptcha_tag()
+{
+    echo '<div class="g-recaptcha" data-sitekey="6Ldyf7EkAAAAAIxR5nE0zE7LIaOXMTT-SFINL3Do"></div>';
+}
+
+add_filter('wp_authenticate_user', 'recaptcha_check');
+
+function recaptcha_check($user, $password=null) {
+
+    if (str_contains($_SERVER['REQUEST_URI'],'/wp-admin') || str_contains($_SERVER['REQUEST_URI'],'/wp-login.php') )
+        return $user;
+
+    $secret_key = '6Ldyf7EkAAAAAKo_4kIIJTNCQFzGcblR-uN5iSv8'; // Замените на ваш секретный ключ reCAPTCHA
+    $response = $_POST['g-recaptcha-response'];
+
+    $remote_ip = $_SERVER['REMOTE_ADDR'];
+
+    $api_url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$response."&remoteip=".$remote_ip;
+
+    $json = file_get_contents($api_url);
+
+    $data = json_decode($json);
+
+    // Проверяем, успешно ли пройдена проверка reCAPTCHA
+    if ($data->success != true) {
+        // Возвращаем ошибку авторизации
+        $user = new WP_Error('authentication_failed', __('reCAPTCHA не была пройдена.', 'woocommerce'));
+    }
+
+    return $user;
+}
+
+add_filter('woocommerce_registration_errors', 'my_registration_errors', 10, 3);
+
+function my_registration_errors($errors, $username, $email) {
+    $secret_key = '6Ldyf7EkAAAAAKo_4kIIJTNCQFzGcblR-uN5iSv8'; // Замените на ваш секретный ключ reCAPTCHA
+    $response = $_POST['g-recaptcha-response'];
+
+    $remote_ip = $_SERVER['REMOTE_ADDR'];
+
+    $api_url = "https://www.google.com/recaptcha/api/siteverify?secret=".$secret_key."&response=".$response."&remoteip=".$remote_ip;
+
+    $json = file_get_contents($api_url);
+
+    $data = json_decode($json);
+
+    // Проверяем, успешно ли пройдена проверка reCAPTCHA
+    if ($data->success != true) {
+        // Добавляем ошибку регистрации
+        $errors->add('registration_error', __('reCAPTCHA не была пройдена.', 'woocommerce'));
+    }
+
+    return $errors;
+}
+
+add_filter( 'woocommerce_order_button_html', 'add_recaptcha_to_checkout', 10, 1 );
+function add_recaptcha_to_checkout( $button_html ) {
+    $site_key = '6Ldyf7EkAAAAAIxR5nE0zE7LIaOXMTT-SFINL3Do'; // замените на ваш публичный ключ reCAPTCHA
+
+    $recaptcha_html = '<span class="demento"><div class="g-recaptcha" data-sitekey="' . $site_key . '"></div>';
+    $button_html = str_replace( '</form>', $recaptcha_html . '</form>', $button_html );
+
+    return $button_html;
+}
+
+add_action('woocommerce_checkout_process', 'recaptcha_validation_checkout_process');
+function recaptcha_validation_checkout_process() {
+    if( !isset($_POST['g-recaptcha-response']) || empty($_POST['g-recaptcha-response']) ) {
+        wc_add_notice( __( 'Пожалуйста пройдите проверку Recaptcha', 'woocommerce' ), 'error' );
+    } else {
+        $recaptcha_secret_key = '6Ldyf7EkAAAAAKo_4kIIJTNCQFzGcblR-uN5iSv8';
+        $response = wp_remote_post( 'https://www.google.com/recaptcha/api/siteverify', array(
+            'body' => array(
+                'secret' => $recaptcha_secret_key,
+                'response' => $_POST['g-recaptcha-response']
+            )
+        ) );
+        $response_body = json_decode( wp_remote_retrieve_body( $response ), true );
+        if( $response_body['success'] === false ) {
+            wc_add_notice( __( 'reCAPTCHA verification failed. Please try again.', 'woocommerce' ), 'error' );
+        }
+    }
+}

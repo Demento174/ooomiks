@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
     <script src="//code.jivo.ru/widget/HDYfzmGjND" async></script>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
