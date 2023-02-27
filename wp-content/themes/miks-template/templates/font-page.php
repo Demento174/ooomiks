@@ -24,10 +24,15 @@ get_header();
 						<div class="slider_text">
 							<p><?php echo $slide['photo_disc']; ?></p>
 						</div>
-
-						<div class="image-div">
-							<?php echo wp_get_attachment_image( $slide['photo_slide'], 'medium_img' ); ?>
-						</div>
+                        <?php if($slide['link']): ?>
+                            <a href="<?=$slide['link']?>" <?php if($slide['_blank']):?> target="_blank"<?php endif;?> class="image-div">
+                                <?php echo wp_get_attachment_image( $slide['photo_slide'], 'medium_img' ); ?>
+                            </a>
+                        <?php else:?>
+                            <div class="image-div">
+							    <?php echo wp_get_attachment_image( $slide['photo_slide'], 'medium_img' ); ?>
+						    </div>
+                        <?php endif; ?>
 					</div>
 					<?php  } endif; ?>
 				</div>
