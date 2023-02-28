@@ -28,3 +28,9 @@
 				<?php woocommerce_breadcrumb(); ?>
 			</div>
 		</div>
+
+        <style>
+            #dgwt-wcas-search-input-1{
+                border:1px solid black;
+            }
+        </style>

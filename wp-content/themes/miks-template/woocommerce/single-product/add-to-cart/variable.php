@@ -49,7 +49,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
                         foreach ($options as $option): ?>
                             <a href="#"
                                data-value="<?=$option?>"
-                               data-attribute-name="<?=$attribute_name?>" <?php if(isset($default_attribute[$attribute_name]) and $option === $default_attribute[$attribute_name]):?> class="active" <?php endif;?> ><?=$option?></a>
+                               data-attribute-name="<?=$attribute_name?>" <?php if(isset($default_attribute[$attribute_name]) and $option === $default_attribute[$attribute_name]):?> class="active" <?php endif;?> ><?=str_replace('-',',',$option)?></a>
                         <?php endforeach;?>
                     </div>
                 <?php endforeach;?>
